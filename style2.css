@@ -1,11 +1,9 @@
 /* Required for honors students */
 /********************************** 
-* Design by:  [your name]
-* Design name:  [your design name]
+* Design by:  R. Mamet
+* Design name:  Celeste
 * 
-* License: [license name - e.g. MIT if you want to let others
-* use the design with attribution, or All Rights Reserved if you
-* don't want others to use the design]
+* License: GNU AGPL3
 * 
 * Acknowledgments/Sources:
 * - 
@@ -13,36 +11,47 @@
 * -
 */
 
-/* Starter code -- feel free to delete */
+@font-face {
+  font-family: Renogare;
+  src: url(/Renogare-Regular.otf);
+}
 
-/* Typography */
-.page-wrapper {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+body {
+  font-family: Renogare, sans-serif;
+  background-image: url(https://images.steamusercontent.com/ugc/17810864162366360252/F303BDAB7D63FBAAB03D3A2568A246B2D7DE3140/);
+  color: white;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Futura, sans-serif;
+
+@media (min-aspect-ratio: 10/8) {
+  .page-wrapper {
+    max-width: 80vw;
+  }
 }
-/* Background */
-#css-zen-garden {
-  background: linear-gradient(60deg, #403636 0%, #0c1579 100%);
+
+h3 {
+  animation: wave 1.5s ease-in-out infinite;
+  width: fit-content;
+  transform-origin: center center;
 }
-/* Page wrapper */
-.page-wrapper {
-  box-sizing: border-box;
-  background: rgba(46, 45, 52, 0.9);
-  color: rgb(243, 255, 246);
-  border: 1px solid #ccc;
-  padding: 1em;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  max-width: 820px;
-  margin: 0 auto;
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
-.page-wrapper a {
-  color: rgb(223, 223, 255);
+
+a {
+  color: #b3ebf2;
+}
+
+a:visited {
+  color: #b39eb5;
 }
