@@ -55,3 +55,35 @@ a {
 a:visited {
   color: #b39eb5;
 }
+
+.sidebar,
+.wrapper {
+  width: auto;
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  align-items: start;
+}
+
+.wrapper {
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  align-items: start;
+}
+
+.wrapper * {
+  width: fit-content;
+}
+
+.sidebar {
+  background-image: url(https://maddie480.ovh/celeste/graphics-dump-browser/Graphics/Atlases/Portraits/textbox/madeline.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  padding: 4em;
+}
