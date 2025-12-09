@@ -29,6 +29,7 @@ body {
 @media (min-aspect-ratio: 10/8) {
   .page-wrapper {
     max-width: 80vw;
+    width: 700px;
   }
 }
 
@@ -56,21 +57,10 @@ a:visited {
   color: #b39eb5;
 }
 
-.sidebar,
-.wrapper {
-  width: auto;
-  display: grid;
-  gap: 0;
-  margin: 0;
-  padding: 0;
-  align-items: start;
-}
-
 .wrapper {
   grid-auto-flow: column;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0;
-  margin: 0;
   padding: 0;
   align-items: start;
 }
@@ -86,4 +76,19 @@ a:visited {
   background-size: 100% 100%;
   box-sizing: border-box;
   padding: 4em;
+}
+
+@media (min-width: 700px) {
+  .sidebar,
+  .wrapper {
+    width: auto;
+    display: grid;
+    gap: 0;
+    padding: 0;
+    align-items: start;
+  }
+
+  .wrapper {
+    margin: 4rem;
+  }
 }
