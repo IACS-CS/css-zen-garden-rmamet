@@ -24,14 +24,32 @@ body {
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
+  padding: auto;
 }
 
 @media (min-aspect-ratio: 10/8) {
   .page-wrapper {
+    margin: auto;
     max-width: 80vw;
     width: 700px;
+    text-align: center;
   }
 }
+
+ul {
+  list-style-type: "🍓";
+  text-align: left;
+}
+
+/* li {
+  list-style: none;
+  padding-left: 0;
+}
+
+li::before {
+  content: "";
+  margin-right: 8px;
+} */
 
 h3 {
   animation: wave 1.5s ease-in-out infinite;
@@ -51,10 +69,21 @@ h3 {
 
 a {
   color: #b3ebf2;
+  text-decoration: none;
 }
 
 a:visited {
   color: #b39eb5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  text-decoration: underline;
+  outline: none;
 }
 
 .wrapper {
