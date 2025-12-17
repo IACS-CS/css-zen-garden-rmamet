@@ -1,56 +1,92 @@
 /* Required for honors students */
 /********************************** 
-* Design by:  [your name]
-* Design name:  [your design name]
+* Design by:  R. Mamet
+* Design name:  Aviation
 * 
-* License: [license name - e.g. MIT if you want to let others
-* use the design with attribution, or All Rights Reserved if you
-* don't want others to use the design]
+* License: GNU AGPL3
 * 
 * Acknowledgments/Sources:
-* - 
+* - Jetphotos (for N13081): https://www.jetphotos.com/photo/10314330
 * - 
 * -
 */
 
-/* Starter code -- feel free to delete */
-/* Typography */
-.page-wrapper {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+@import url("https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  background: linear-gradient(rgba(34, 68, 68, 0.8)), url(./plane.JPG);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: antiquewhite;
+  font-family: "Charis SIL", serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+div {
+  max-width: 1000px;
+  margin: auto;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: #344c43;
-  text-shadow: 4px 4px 3px #2225;
+  font-family: "BBH Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* Background */
-#css-zen-garden {
-  /* Repeating stripes */
-  background-size: 40px 40px;
-  background-image: linear-gradient(
-    45deg,
-    #d1ece2 25%,
-    transparent 25%,
-    transparent 50%,
-    #d1ece2 50%,
-    #d1ece2 75%,
-    transparent 75%,
-    transparent
-  );
+h1 {
+  background-image: url(https://cdn.jetphotos.com/full/6/22095_1633219910.jpg);
+  background-size: auto;
+  background-position: center center;
+  background-clip: text;
+  color: rgb(255 255 255 / 20%);
+  -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
+
+  font-size: 5em;
+  max-width: 1000px;
 }
-/* Page wrapper */
-.page-wrapper {
-  box-sizing: border-box;
-  background: rgba(237, 254, 253, 0.9);
-  border: 1px solid #ccc;
-  padding: 1em;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  max-width: 660px;
-  margin: 0 auto;
+
+ul {
+  list-style-type: "🛩️";
+  text-align: left;
+}
+
+a {
+  color: #bdb;
+}
+
+@media (min-width: 850px) {
+  .wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    align-content: start;
+    align-items: start;
+    place-items: start;
+  }
+}
+
+.wrapper {
+  border: 5px dashed black;
+  border-radius: 2em;
+  width: fit-content;
+  margin: 1em;
+
+  background: linear-gradient(#446666cc), url(./bigPlane.jpg);
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper > * {
+  margin: 1em;
+  width: fit-content;
 }
