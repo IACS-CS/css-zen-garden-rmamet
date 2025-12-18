@@ -31,9 +31,30 @@ body {
   .page-wrapper {
     margin: auto;
     max-width: 80vw;
-    width: 700px;
-    text-align: center;
+    width: 1000px;
   }
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.67;
+  width: 650px;
 }
 
 ul {
@@ -51,7 +72,8 @@ li::before {
   margin-right: 8px;
 } */
 
-h3 {
+h3,
+h4 {
   animation: wave 1.5s ease-in-out infinite;
   width: fit-content;
   transform-origin: center center;
